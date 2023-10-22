@@ -1,0 +1,121 @@
+##Open In App
+
+GEEKSFORGEEKS
+Python program to create Bankaccount class with deposit, withdraw function
+Prerequisite: Object Oriented Programming in Python
+Let’s write a simple Python program using OOP concept to perform some simple bank operations like deposit and withdrawal of money.
+First of all, define class Bankacccount. This step is followed by defining a function using __init__. It is run as soon as an object of a class is instantiated. This __init__ method is useful to do any initialization you want to do with object, then we have the default argument self.
+ 
+
+# BankAccount class
+
+class Bankaccount:
+
+    def __init__(self):
+This step is followed by declaring that balance is 0 using self argument then we simply print a statement welcoming to Machine. In function deposit and withdraw , amount is taken as input(in float) and is then added/subtracted to the balance. Thus resultant balance is printed in next line.
+ 
+
+# Function to deposit amount
+
+def deposit(self):
+
+        amount = float(input("Enter amount to be deposited: "))
+
+        self.balance += amount
+
+        print("\n Amount Deposited:", amount)
+Use an if condition to check whether there is a sufficient 
+amount of money available in the account to process a fund withdrawal.
+ 
+
+# Function to withdraw the amount
+
+def withdraw(self):
+
+        amount = float(input("Enter amount to be withdrawn: "))
+
+        if self.balance >= amount:
+
+            self.balance -= amount
+
+            print("\n You Withdrew:", amount)
+
+        else:
+
+            print("\n Insufficient balance  ")
+Next, we use a display function to display the remaining balance in the account. Then we create a object and call it to get the program executed. 
+ 
+
+# Function to display the amount
+
+def display(self):
+
+        print("\n Net Available Balance =", self.balance)
+Below is the implementation: 
+ 
+
+
+class Bank_Account:
+
+    def __init__(self):
+
+        self.balance=0
+
+        print("Hello!!! Welcome to the Deposit & Withdrawal Machine")
+ 
+
+    def deposit(self):
+
+        amount=float(input("Enter amount to be Deposited: "))
+
+        self.balance += amount
+
+        print("\n Amount Deposited:",amount)
+ 
+
+    def withdraw(self):
+
+        amount = float(input("Enter amount to be Withdrawn: "))
+
+        if self.balance>=amount:
+
+            self.balance-=amount
+
+            print("\n You Withdrew:", amount)
+
+        else:
+
+            print("\n Insufficient balance  ")
+ 
+
+    def display(self):
+
+        print("\n Net Available Balance=",self.balance)
+ 
+# Driver code
+
+  
+# creating an object of class
+
+s = Bank_Account()
+
+  
+# Calling functions with that class object
+s.deposit()
+s.withdraw()
+s.display()# Hi there 👋
+
+<!--
+**kalaidurga/kalaidurga** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+Here are some ideas to get you started:
+
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
