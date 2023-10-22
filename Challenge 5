@@ -1,0 +1,31 @@
+### Hi def linearSearchProduct(productList, targetProduct):
+  indices = []
+
+  for index, product in enumerate(productList):
+    if product == targetProduct:
+      indices.append(index)
+
+  return indices
+
+
+# Example usage:
+products = ["shoes", "boot", "loafer", "shoes", "sandal", "shoes"]
+target = "shoes"
+target2 = 'apple'
+result = linearSearchProduct(products, target)
+print(result)there 👋
+
+<!--
+**kalaidurga/kalaidurga** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+Here are some ideas to get you started:
+
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
